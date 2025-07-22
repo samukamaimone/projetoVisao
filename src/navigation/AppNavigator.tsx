@@ -5,8 +5,6 @@ import LoginScreen from '../screens/LoginScreen';
 import MoodScreen from '../screens/MoodScreen';
 import ResultadoScreen from '../screens/ResultadoScreen';
 
-// Removemos a tipagem <RootStackParamList> daqui.
-// O navegador agora funciona de forma mais genérica.
 const Stack = createNativeStackNavigator();
 
 export default function AppNavigator() {
@@ -20,12 +18,12 @@ export default function AppNavigator() {
       <Stack.Screen 
         name="MoodScreen" 
         component={MoodScreen} 
-        options={{ title: 'Como você está?' }} 
+        options={{ title: 'Qual o sentimento de hoje?' }} 
       />
       <Stack.Screen 
         name="ResultadoScreen" 
         component={ResultadoScreen} 
-        options={{ title: 'Seu Humor' }} 
+        options={{ title: 'Meu Humor' }} 
       />
     </Stack.Navigator>
   );
